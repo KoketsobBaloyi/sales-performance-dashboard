@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📊 **Sales Performance Dashboard – SQL + Power BI**
 
 ## 📌 Project Overview
@@ -235,3 +236,7 @@ sales-performance-dashboard/
 
 └── README.md
 
+=======
+# sales-performance-dashboard
+End-to-end SQL and Power BI project analyzing sales, regional performance, and risk insights.
+>>>>>>> cbfe1b7610c20cc2899986c1d3528dc80873f54c
