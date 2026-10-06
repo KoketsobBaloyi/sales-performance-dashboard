@@ -1,242 +1,81 @@
-<<<<<<< HEAD
-# 📊 **Sales Performance Dashboard – SQL + Power BI**
+# **Sales Performance Dashboard: SQL and Power BI **
 
-## 📌 Project Overview
+## *Project Overview*
 
-
-
-This project demonstrates an end-to-end Business Intelligence workflow using S**QL Server and Power BI**.
-
-
-
-The objective was to clean raw sales data, transform it for analysis, and develop an interactive dashboard to evaluate:
-
-
+This project is an end-to-end business intelligence workflow built with SQL Server and Power BI. Raw retail sales data was cleaned and transformed in SQL, then used to build an interactive dashboard that evaluates:
 
 * Revenue trends
-
-
-
 * Regional performance
-
-
-
 * Profitability
+* Business risk areas (loss-making products and low-margin categories)
 
+## Tools and Technologies
 
-
-* Business risk areas (loss-making products \& low margins)
-
-
-
-This project simulates a real-world data analyst task from data preparation to executive reporting.
-
-
-
-### 
-
-### 🛠 Tools \& Technologies Used
-
-
-
-* SQL Server Management Studio (SSMS)
-
-
-
+* SQL Server Management Studio (T-SQL)
 * Power BI Desktop
-
-
-
 * DAX (basic measures)
+* GitHub (version control and documentation)
 
+## Dataset
 
+The analysis uses the public sample Superstore retail dataset (Data/sample-Superstore.csv).
 
-* GitHub (version control \& documentation)
+## Data Preparation (SQL)
 
+The raw data was cleaned and transformed using SQL.
 
+Key steps:
 
-
-
-
-
-### 🗄 Data Preparation (SQL)
-
-
-
-Raw data from the Superstore dataset was cleaned and transformed using SQL.
-
-
-
-###### 🔹 Key Data Cleaning Steps
-
-
-
-* Created a structured analysis table (sales\_data)
-* Converted date columns using TRY\_CAST
-* Standardized numeric data types (DECIMAL, INT)
+* Created a structured analysis table (sales_data)
+* Converted date columns using TRY_CAST
+* Standardised numeric data types (DECIMAL, INT)
 * Checked for missing and invalid values
 * Identified negative and null records
 * Validated sales and profit consistency
 
+KPIs calculated in SQL:
 
+* Monthly revenue trend
+* Top 10 customers by total spend
+* Profit margin percentage by category
+* Identification of loss-making products
+* Revenue and profit by region
 
-###### 🔹 Business Analysis Queries Performed
+SQL script: sql/sales_data_cleaning_and_analysis.sql
 
+## Power BI Dashboard
 
+The cleaned dataset was imported into Power BI to build an interactive dashboard with three pages.
 
-The following KPIs were calculated in SQL:
+### 1. Executive Overview
 
+Total revenue, total profit, monthly revenue trend and an overall performance summary.
 
+![Executive Overview](images/overview.png)
 
-* 📅 Monthly Revenue Trend
-* 👥 Top 10 Customers by Total Spend
-* 📊 Profit Margin Percentage by Category
-* ⚠ Identification of Loss-Making Products
-* 🌍 Revenue \& Profit by Region
+### 2. Regional Performance
 
+Revenue and profit by region, with a comparison across regions.
 
+![Regional Performance](images/regional.png)
 
-###### 📂 SQL Script:
+### 3. Risk and Loss Analysis
 
-/sql/sales\_data\_cleaning\_and\_analysis.sql
+Loss-making products, low-margin categories and profitability risks.
 
+![Risk and Loss Analysis](images/risk.png)
 
+## Key Insights
 
-
-
-### 📈 Power BI Dashboard
-
-
-
-After cleaning the data in SQL, the structured dataset was imported into Power BI to build an interactive dashboard with three analytical pages:
-
-
-
-###### 1️⃣ Executive Overview
-
-
-
-* Total Revenue
-* Total Profit
-* Monthly Revenue Trend
-* Overall Performance Summary
-
-
-
-###### 2️⃣ Regional Performance
-
-
-
-* Revenue by Region
-* Profit by Region
-* Comparative Regional Analysis
-
-
-
-
-
-###### 3️⃣ Risk \& Loss Analysis
-
-
-
-* Loss-Making Products
-* Low Margin Categories
-* Identification of Profitability Risks
-
-
-
-
-
-
-
-### 🎯 Key Insights Generated
-
-
-
-* Identified regions contributing the highest revenue and profit
+* Identified the regions contributing the highest revenue and profit
 * Detected products generating consistent losses
 * Highlighted categories with low profit margins
-* Provided data-driven insights for strategic decision-making
+* Provided data-driven insights to support strategic decision-making
 
+## Project Structure
 
-
-
-
-### 📷 Dashboard Preview
-
-
-
-(Add screenshots in the images folder and reference them like below)
-
-
-
-###### Executive Overview
-
-###### 
-
-###### Regional Performance
-
-###### 
-
-###### Risk \& Loss Analysis
-
-
-
-### 💼 Business Value
-
-### 
-
-This project demonstrates the ability to:
-
-
-
-* Clean and transform raw data using SQL
-* Apply business logic to generate KPIs
-* Build interactive dashboards in Power BI
-* Translate data into actionable insights
-* Structure and document projects professionally using GitHub
-
-
-
-### 
-
-### 🚀 Project Structure
-
-sales-performance-dashboard/
-
-│
-
-├──data/sample-Superstore.csv
-
-|
-
-|
-
-├── sql/
-
-│   └── sales\_data\_cleaning\_and\_analysis.sql
-
-│
-
-├── powerbi/
-
-│   └── Sales\_Performance\_Dashboard.pbix
-
-│
-
-├── images/
-
-│   ├── overview.png
-
-│   ├── regional.png
-
-│   └── risk.png
-
-│
-
-└── README.md
-
-=======
-# sales-performance-dashboard
-End-to-end SQL and Power BI project analyzing sales, regional performance, and risk insights.
->>>>>>> cbfe1b7610c20cc2899986c1d3528dc80873f54c
+* Data/ : sample Superstore dataset
+* sql/ : data cleaning and analysis script
+* PowerBi/ : Power BI dashboard file (.pbix)
+* images/ : dashboard screenshots
+* README.md
