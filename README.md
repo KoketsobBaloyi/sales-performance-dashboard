@@ -1,4 +1,4 @@
-# **Sales Performance Dashboard: SQL and Power BI **
+# Sales Performance Dashboard: SQL and Power BI 
 
 ## *Project Overview*
 
